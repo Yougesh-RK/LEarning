@@ -12,7 +12,7 @@ class App extends Component {
     console.log(this.props);
     return (
       <Fragment>
-        <h3>App Component</h3>
+        <h3>App Component </h3>
         <button onClick={this.changePath.bind(this)} >Go to Home</button>
       </Fragment>
     )
