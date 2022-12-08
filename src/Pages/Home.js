@@ -1,4 +1,6 @@
 import { Component, Fragment } from "react";
+import { Link, Route } from "react-router-dom";
+import HomeChildRoute from './HomeChildRoute'
 
 class Home extends Component{
 
@@ -11,6 +13,10 @@ class Home extends Component{
       <Fragment>
         <h3>Home </h3>
         <button onClick={this.changePath.bind(this)} >Go To Product DEtails</button>
+        <Link to="/Home/HomeChild">HomeChild Route</Link>
+        <Route path='/Home/HomeChild' >
+          <HomeChildRoute></HomeChildRoute>
+        </Route>
       </Fragment>
     )
   }

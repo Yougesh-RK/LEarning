@@ -13,9 +13,10 @@ let render = (
   <BrowserRouter>
     <Fragment>
       <Switch>
-        <Route exact to="/Home" component={Home}  />        
-        <Route exact to="/" component={App}  />
-        <Route exact to="/ProductDetails/:id" component={ProductDetails}  />
+        <Route exact path="/" component={App}  />
+        <Route exact path="/Home" component={Home}  />     
+        <Route exact path="/Home/*" component={Home}  />        
+        <Route exact path="/ProductDetails/:id" component={ProductDetails}  />
       </Switch>
     </Fragment>
   </BrowserRouter>
